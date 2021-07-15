@@ -52,3 +52,7 @@ public List<Binding> filterBindings(@Nullable String type, @Nullable String prov
 (Example taken from [Spring Cloud Bindings](https://github.com/spring-cloud/spring-cloud-bindings))
 
 Since the APIs are returning more than one value, depending on your application need, you can choose to connect to the first entry or all of them, if required.
+
+### Environment Variables
+
+The spec also has support for projecting environment variables.  You can use the built-in language feature of your programming language of choice to read environment variables.  The container must restart to update the values of environment variables if there is a change in the Secret resource.
